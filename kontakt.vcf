@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kowalski;Artur;;;
+FN:Artur Kowalski
+TITLE:Fotograf
+TEL;TYPE=CELL,VOICE:+48663687733
+URL;TYPE=Messenger:https://m.me/Foto-WKadrze
+URL;TYPE=Telegram:https://t.me/1456996034
+URL;TYPE=Portfolio:https://500px.com/p/dmitruk
+URL;TYPE=WWW:https://arturkowalski.github.io/wizytowka
+NOTE:Fotografia to dla mnie coś więcej niż praca - to sposób na zatrzymanie najpiękniejszych chwil.
+END:VCARD
