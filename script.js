@@ -21,7 +21,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   qrBox.appendChild(qrLink);
 
   var logo = document.createElement('img');
-  logo.src = 'logo.png';
+  logo.src = 'logo.png?v=2';
   logo.alt = '';
   logo.className = 'qr-logo';
   qrBox.appendChild(logo);
