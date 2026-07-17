@@ -7,11 +7,18 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
   var pageUrl = window.location.href.split('#')[0].split('?')[0];
 
+  var qrLink = document.createElement('a');
+  qrLink.href = pageUrl;
+  qrLink.target = '_blank';
+  qrLink.rel = 'noopener';
+  qrLink.setAttribute('aria-label', 'Otwórz tę wizytówkę');
+
   var qrImg = document.createElement('img');
   qrImg.className = 'qr-img';
   qrImg.alt = 'Kod QR prowadzący do tej wizytówki';
   qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=8&color=241f1a&bgcolor=f5efe4&data=' + encodeURIComponent(pageUrl);
-  qrBox.appendChild(qrImg);
+  qrLink.appendChild(qrImg);
+  qrBox.appendChild(qrLink);
 
   var logo = document.createElement('img');
   logo.src = 'logo.png';
