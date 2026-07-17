@@ -16,7 +16,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   var qrImg = document.createElement('img');
   qrImg.className = 'qr-img';
   qrImg.alt = 'Kod QR prowadzący do tej wizytówki';
-  qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=8&color=241f1a&bgcolor=f5efe4&data=' + encodeURIComponent(pageUrl);
+  qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=10&ecc=H&color=241f1a&bgcolor=f5efe4&data=' + encodeURIComponent(pageUrl);
   qrLink.appendChild(qrImg);
   qrBox.appendChild(qrLink);
 
